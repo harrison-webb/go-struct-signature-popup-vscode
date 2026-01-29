@@ -2,6 +2,8 @@
 
 A VSCode extension that provides signature help popups for Go struct literals, similar to function signature help.
 
+![example image of extension in use](example.png)
+
 ## Features
 
 When you type a struct literal in Go (e.g., `Person{`), this extension shows a popup displaying all fields with their types and documentation.
