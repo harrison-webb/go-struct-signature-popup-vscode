@@ -1,0 +1,51 @@
+{
+  "name": "go-struct-signature",
+  "displayName": "Go Struct Signature Helper",
+  "description": "Shows struct field information in signature help popup when working with Go struct literals",
+  "version": "0.0.1",
+  "publisher": "harrisonwebb",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:go"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Go Struct Signature",
+      "properties": {
+        "goStructSignature.showTypes": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show field types in signature help"
+        },
+        "goStructSignature.showDocumentation": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show field documentation in signature help"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts",
+    "test": "npm run compile && mocha ./out/test/**/*.test.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "mocha": "^11.7.5",
+    "typescript": "^5.3.0"
+  }
+}
