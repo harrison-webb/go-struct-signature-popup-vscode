@@ -3,7 +3,11 @@
   "displayName": "Go Struct Signature Helper",
   "description": "Shows struct field information in signature help popup when working with Go struct literals",
   "version": "0.0.1",
-  "publisher": "harrisonwebb",
+  "publisher": "harrisonglennwebb",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harrison-webb/go-struct-signature-popup-vscode.git"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
